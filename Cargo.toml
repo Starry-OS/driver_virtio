@@ -15,8 +15,8 @@ net = ["driver_net"]
 gpu = ["driver_display"]
 
 [dependencies]
-driver_common = { path = "../driver_common" }
-driver_block = { path = "../driver_block", optional = true }
-driver_net = { path = "../driver_net", optional = true }
-driver_display = { path = "../driver_display", optional = true}
+driver_common = { git = "https://github.com/Starry-OS/driver_common.git" }
+driver_block = { git = "https://github.com/Starry-OS/driver_block.git", optional = true }
+driver_net = { git = "https://github.com/Starry-OS/driver_net.git", optional = true }
+driver_display = { git = "https://github.com/Starry-OS/driver_display.git", optional = true}
 virtio-drivers = { git = "https://github.com/rcore-os/virtio-drivers.git", rev = "4b60f5d" }
