@@ -39,7 +39,7 @@ impl<H: Hal, T: Transport> VirtIoGpuDev<H, T> {
     }
 }
 
-impl<H: Hal, T: Transport> const BaseDriverOps for VirtIoGpuDev<H, T> {
+impl<H: Hal, T: Transport> BaseDriverOps for VirtIoGpuDev<H, T> {
     fn device_name(&self) -> &str {
         "virtio-gpu"
     }

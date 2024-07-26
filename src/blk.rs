@@ -21,7 +21,7 @@ impl<H: Hal, T: Transport> VirtIoBlkDev<H, T> {
     }
 }
 
-impl<H: Hal, T: Transport> const BaseDriverOps for VirtIoBlkDev<H, T> {
+impl<H: Hal, T: Transport> BaseDriverOps for VirtIoBlkDev<H, T> {
     fn device_name(&self) -> &str {
         "virtio-blk"
     }
